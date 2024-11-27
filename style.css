@@ -16,7 +16,7 @@ body, html {
 .contador {
   text-align: center;
   background: rgba(0, 0, 0, 0.7); /* Fondo negro transparente */
-  padding: 30px 20px;
+  padding: 30px 90px;
   border-radius: 15px; /* Bordes redondeados */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6); /* Sombra */
   width: 90%;
@@ -45,6 +45,9 @@ body, html {
   flex: 1;
   min-width: 70px;
   text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  
 }
 
 /* Número grande */
@@ -107,9 +110,5 @@ body, html {
 
   .numero {
     font-size: 24px;
-  }
-
-  .etiqueta {
-    font-size: 11px;
   }
 }
