@@ -1,0 +1,115 @@
+/* Reset general */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #141e30, #243b55); /* Fondo degradado */
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor principal */
+.contador {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7); /* Fondo negro transparente */
+  padding: 30px 20px;
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6); /* Sombra */
+  width: 90%;
+  max-width: 600px;
+}
+
+/* Título */
+.contador h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #00bcd4; /* Azul claro */
+}
+
+/* Contenedor de tiempo */
+.tiempo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Cada unidad de tiempo */
+.unidad {
+  flex: 1;
+  min-width: 70px;
+  text-align: center;
+}
+
+/* Número grande */
+.numero {
+  font-size: 32px;
+
+  color: #ffffff; /* Amarillo */
+}
+
+/* Etiqueta debajo del número */
+.etiqueta {
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
+
+/* Animación de números (opcional) */
+.numero {
+  transition: transform 0.3s, color 0.3s;
+}
+.numero:hover {
+  transform: scale(1.2);
+  color: #ff5722; /* Naranja */
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+  .contador {
+    padding: 20px;
+  }
+
+  .contador h1 {
+    font-size: 20px;
+  }
+
+  .numero {
+    font-size: 28px;
+  }
+
+  .etiqueta {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tiempo {
+    flex-direction: column; /* Coloca cada unidad en una columna */
+  }
+
+  .unidad {
+    margin-bottom: 15px;
+  }
+
+  .contador h1 {
+    font-size: 18px;
+  }
+
+  .numero {
+    font-size: 24px;
+  }
+
+  .etiqueta {
+    font-size: 11px;
+  }
+}
