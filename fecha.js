@@ -9,23 +9,14 @@ function actualizarContador() {
   const segundos = Math.floor(diferencia / 1000);
   const minutos = Math.floor(segundos / 60);
   const horas = Math.floor(minutos / 60);
+
   const dias = Math.floor(horas / 24);
-
-  const años = ahora.getFullYear() - fechaInicio.getFullYear();
-  let meses = ahora.getMonth() - fechaInicio.getMonth();
-  if (meses < 0) {
-    meses += 12;
-  }
-
-  // Calcular los días restantes después de calcular los meses y años
   const diasRestantes = Math.floor(diferencia / (1000 * 60 * 60 * 24)) % 30;
   const horasRestantes = horas % 24;
   const minutosRestantes = minutos % 60;
-  const segundosRestantes = segundos % 60;  // Cálculo de los segundos restantes
+  const segundosRestantes = segundos % 60; // Cálculo de los segundos restantes
 
   // Actualizar los valores en los elementos correspondientes
-  document.getElementById('años').textContent = años;
-  document.getElementById('meses').textContent = meses;
   document.getElementById('dias').textContent = diasRestantes;
   document.getElementById('horas').textContent = horasRestantes;
   document.getElementById('minutos').textContent = minutosRestantes;
