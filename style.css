@@ -4,7 +4,7 @@ body, html {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(135deg, #141e30, #243b55); /* Fondo degradado */
+  background: url(40c82258-4e80-4cb6-8a54-a92753ebfa55.jpg); /* Fondo degradado */
   color: white;
   height: 100vh;
   display: flex;
