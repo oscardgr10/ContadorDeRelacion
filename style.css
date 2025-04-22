@@ -6,6 +6,7 @@ body, html {
   font-family: 'Arial', sans-serif;
   background: url(40c82258-4e80-4cb6-8a54-a92753ebfa55.jpg); /* Fondo degradado */
   background-size: cover;
+  background-attachment: fixed;
   color: white;
   height: 100vh;
   display: flex;
